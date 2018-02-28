@@ -20,7 +20,7 @@ h5,
 h6 {
   @include heading-font;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: none;
   color: $gray-800;
 }
 
@@ -34,7 +34,7 @@ h2 {
 }
 
 .subheading {
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: 500;
   @include heading-font;
   font-size: 1.35rem;
