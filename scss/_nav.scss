@@ -2,7 +2,7 @@
   .navbar-brand {}
   .navbar-nav .nav-item .nav-link {
     font-weight: 600;
-    text-transform: uppercase;
+    text-transform: none;
   }
 }
 
@@ -22,11 +22,11 @@
       display: flex;
 
       margin: auto auto 0;
-      padding: 0.5rem;
+      padding: 0.1rem;
       .img-profile {
         max-width: 10rem;
         max-height: 10rem;
-        border: 0.5rem solid fade-out($white, 0.8);
+        border: 0.1rem solid fade-out($white, 0.8);
       }
     }
     .navbar-collapse {
