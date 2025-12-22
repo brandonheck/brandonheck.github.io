@@ -1,2 +1,7 @@
 node_modules
 *.bak
+
+# Hugo
+public/
+resources/
+.hugo_build.lock
