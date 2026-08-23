@@ -1,0 +1,208 @@
+baseURL: 'https://brandonheck.github.io/'
+languageCode: 'en-us'
+title: 'Brandon Heck'
+caches:
+  images:
+    dir: :cacheDir/images
+
+params:
+  description: 'Brandon Heck - Landing Page'
+  author: 'Brandon Heck'
+  email: 'brandon@brandonkheck.com'
+  
+  social:
+    linkedin: 'https://www.linkedin.com/in/brandonheck/'
+    twitter: 'https://twitter.com/brandonkheck'
+    github: 'https://github.com/brandonheck'
+    stackoverflow: 'https://stackoverflow.com/users/1579393/brandon-heck'
+
+  profile:
+    tagline: "Change the world, one line of code at a time."
+    description: "Experienced Java developer with a love for backend services\nStrong focus on API design\nPassion for developing reusable libraries to meet application needs and standardize operations across applications"
+    image: "img/profile.jpg"
+
+  objective: "Leverage sound software development practices to produce creative, innovative, forward-thinking software solutions which create value for the business, clients, and other developers."
+
+  technologies:
+    high_proficiency:
+      - name: "Java SE"
+      - name: "Java EE"
+      - name: "Web Services Development"
+        subitems:
+          - "Message-Driven Beans"
+          - "REST (JAX-RS)"
+      - name: "JDBC, SQL"
+      - name: "Apache Maven"
+      - name: "JMX"
+      - name: "Jenkins"
+    working_knowledge:
+      - name: "Java Authentication and Authorization Service"
+      - name: "Java Message Service (JMS)"
+      - name: "Java Native Interface (JNI)"
+      - name: "Websphere Application Server"
+      - name: "Apache Tomcat"
+      - name: "OAuth Protected Services"
+      - name: "XML"
+      - name: "HTML"
+      - name: "OSGi"
+      - name: "Linux Containers (Docker)"
+    basic_knowledge:
+      - name: "NoSQL"
+      - name: "PL/SQL"
+      - name: "JCache"
+      - name: "OAuth Providers"
+      - name: "JPA/Hibernate"
+      - name: "C++"
+      - name: "C#"
+      - name: "Groovy"
+      - name: "Eclipse RCP"
+      - name: "Ruby"
+      - name: "Clojure"
+      - name: "Javascript ES6 & Node.js"
+      - name: "React.js"
+      - name: "Shell Scripting"
+        subitems:
+          - "Bash"
+          - "KSH"
+          - "Batch"
+
+  responsibilities:
+    - name: "Gathering, creating, and assessing functional requirements"
+    - name: "Turning functional requirements into high-level architectural designs and low-level implementation designs"
+    - name: "Creating and assessing technical designs for use in high-throughput, highly concurrent systems"
+    - name: "Developing optimized, fault-tolerant software based on technical designs"
+    - name: "Ensuring that implementation follows the SOLID design principles"
+    - name: "Testing"
+      subitems:
+        - "Whitebox testing using Test Driven Development"
+        - "Black Box Testing"
+        - "Behavior Driven Development"
+        - "Integration Testing"
+        - "Performance Testing"
+    - name: "Developing infrastructure libraries to create a cohesive development, deployment, and software management ecosystem"
+    - name: "Adapting platform architecture to interoperate with new infrastructure"
+    - name: "Troubleshooting, debugging, and providing support to developers for general Java issues, issues involving open-source libraries, and issues related to libraries maintained by my team"
+    - name: "Mentoring new developers and developers new to the team"
+    - name: "Working cross-functionally with client support, infrastructure, and other development teams to diagnose production issues and identify fixes"
+    - name: "Working with infrastructure teams to prototype infrastructure tools and integrate tools with the service platform"
+
+  projects:
+    - title: "Enhance queue-based enterprise application service platform to run on SaaS infrastructure"
+      items:
+        - "Decouple runtime from legacy proprietary tooling"
+        - "Create standard health check HTTP endpoints"
+        - "Decouple service lifecycle from traditional domain lifecycle"
+        - "Enhance platform for connections to multiple MQ queue managers"
+        - "Implement MQ reconnection and service-side connection management"
+    - title: "Client, server, and middleware libraries which provide integration with existing tools and ecosystems"
+    - title: "Highly scalable back-end services and web-based services"
+    - title: "Java EE Portlets running on IBM WebSphere Application Server (WAS)"
+    - title: "Reusable libraries to perform custom installation logic on WAS including data source setup, inspection and manipulation of environment entries, and setting up Websphere MQ resources"
+    - title: "Instrumentation framework (logging, counters, measurements, diagnostic context)"
+    - title: "Cache framework with extensible coherency model"
+    - title: "Object-Relational Model data persistence framework"
+    - title: "JDBC framework and utilities, including configuration, instrumentation, and failover"
+    - title: "Inversion-of-control framework based on the Service Provider specification"
+    - title: "Enhancing, maintaining, and writing reusable and stand-alone business logic"
+
+  activities:
+    - title: "Kansas City Java Users Group"
+      role: "Organizer and host"
+      period: "June 2017 - Present"
+      items:
+        - "Organize locations, sponsors, and speakers"
+        - "Promote meetups to drive membership and attendance"
+        - "Manage web presence"
+        - "Communicate to meetup members"
+    - title: "Cerner Java Developer's Meetup"
+      role: "Organizer and Speaker"
+      period: "Sept 2014 - Nov 2018"
+      items:
+        - "Coordinate topics and speakers"
+        - "Emcee meetups"
+        - "Speak on a wide range of Java-related topics tailored to how they are applicable to day-to-day development efforts at Cerner"
+
+  experience:
+    - title: "Associate Lead Software Engineer"
+      company: "Cerner Corporation"
+      period: "February 2019 - Present"
+      items:
+        - name: "Work with multiple stakeholders to identify emerging and anticipated needs"
+        - name: "Understand technical complexity through research and prototyping"
+        - name: "Leverage software from multiple sources, including open source software, commercial software, and proprietary software to create standardizations for frequently encountered needs"
+        - name: "Create and review high-level designs with multiple stakeholders and development teams"
+        - name: "Use high-level designs to create project plans"
+        - name: "Serve as technical lead for a team of 4-6 developers"
+        - name: "Review low-level technical designs and code to ensure it meets standards for:"
+          subitems:
+            - "Technical correctness"
+            - "Scalability"
+            - "Supportability"
+            - "Succinctness"
+            - "Appropriateness of APIs"
+            - "Extensibility"
+            - "Functional completeness"
+            - "Testability"
+        - name: "Implement software changes"
+    - title: "Senior Software Engineer"
+      company: "PayIt"
+      period: "Nov 2018 - February 2019"
+      items:
+        - name: "Create Java REST microservices"
+        - name: "Use clojure to create a finite state automata for driving customer workflows"
+        - name: "Enhance Node.js ES6 service to transform data for display"
+        - name: "Integrate with client data systems"
+          subitems:
+            - "Explore existing client data model to find customer information for replacing legacy applications"
+        - name: "Transform and store customer data models in MongoDB"
+    - title: "Associate Lead Software Engineer"
+      company: "Cerner Corporation"
+      period: "May 2008 - November 2018"
+    - title: "Cerner Learning Facilitator"
+      company: "Cerner Corporation"
+      period: "Mar 2011 - Nov 2018"
+      roles:
+        - role: "Millennium Architecture"
+          items:
+            - name: "Cover the history, architectural overview, and concepts related to Cerner's flagship product"
+            - name: "Present purpose and usage information about operations tooling for developers"
+            - name: "Lead laboratory exercises related to operations tooling and troubleshooting issues"
+        - role: "System Infrastructure and Services Development"
+          items:
+            - name: "Facilitate material presentation and laboratory exercises for other developers on libraries used to solve common issues and standardize the operational model, including:"
+              subitems:
+                - "Standardized logging APIs"
+                - "Caching framework"
+                - "JDBC standardization utilities"
+                - "Data marshalling libraries"
+                - "Messaging middleware"
+                - "Service specification APIs"
+                - "Service runtime concepts and service containers"
+                - "Best practices for services development on proprietary service framework"
+        - role: "Development Ecosystem"
+          items:
+            - name: "Instruct developers on general development concepts and concerns, including:"
+              subitems:
+                - "Apache Maven"
+                - "Software release best practices"
+                - "Maintaining software assemblies"
+                - "Strategies for API design"
+                - "Automated testing best practices"
+
+  education:
+    - degree: "Master of Science"
+      field: "Applied Computer Science"
+      school: "Northwest Missouri State University"
+      date: "April 2008"
+      gpa: "3.82"
+    - degree: "Bachelor of Science"
+      field: "Computer Science"
+      school: "Northwest Missouri State University"
+      date: "April 2006"
+      gpa: "3.01"
+
+  learning:
+    - "Linux Containers and Docker - Pluralsight"
+    - "Java 9 Modularity - Pluralsight"
+
+
