@@ -1,6 +1,9 @@
 baseURL: 'https://brandonheck.github.io/'
 languageCode: 'en-us'
 title: 'Brandon Heck'
+caches:
+  images:
+    dir: :cacheDir/images
 
 params:
   description: 'Brandon Heck - Landing Page'
@@ -201,4 +204,5 @@ params:
   learning:
     - "Linux Containers and Docker - Pluralsight"
     - "Java 9 Modularity - Pluralsight"
+
 
