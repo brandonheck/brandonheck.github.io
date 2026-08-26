@@ -69,14 +69,18 @@ params:
     image: /img/profile.jpg
     bottomImage:
       enable: true
-    button:
-      enable: false
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-linkedin
           url: https://www.linkedin.com/in/brandonheck/
         - icon: fab fa-github
           url: https://github.com/brandonheck
+    button:
+      enable: true
+      name: "Download as PDF"
+      url: "/files/Brandon_Heck_Resume.pdf"
+      download: true
+      newPage: false
 
   # About
   about:
