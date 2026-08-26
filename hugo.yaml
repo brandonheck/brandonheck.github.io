@@ -1,0 +1,292 @@
+baseURL: "https://brandonheck.github.io/"
+languageCode: "en-us"
+title: "Brandon Heck"
+theme: hugo-profile
+
+caches:
+  images:
+    dir: :cacheDir/images
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+pagination:
+  pagerSize: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  title: "Brandon Heck"
+  description: "Brandon Heck - Software Engineer"
+  favicon: "/fav.png"
+  useBootstrapCDN: false
+  animate: true
+
+  font:
+    fontSize: 1rem
+    fontWeight: 400
+    lineHeight: 1.5
+    textAlign: left
+
+  navbar:
+    align: ms-auto
+    brandName: "Brandon Heck"
+    disableSearch: true
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Brandon Heck"
+    subtitle: "Software Engineer building reliable, scalable backend systems."
+    content: >-
+      Experienced Software Engineer with 17+ years simplifying the developer
+      experience and delivering highly scalable, performant distributed systems,
+      cloud-native microservices, and enterprise data platforms across healthcare
+      IT, retail, fintech, and payments.
+    image: /img/profile.jpg
+    bottomImage:
+      enable: true
+    button:
+      enable: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/brandonheck/
+        - icon: fab fa-github
+          url: https://github.com/brandonheck
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/img/profile.jpg"
+    content: |-
+      Experienced Software Engineer with 17+ years simplifying the developer experience, delivering highly scalable and performant distributed systems, cloud-native microservices, and enterprise data platforms. Proven track record across healthcare IT, retail, fintech, and payments.
+
+      Delivering reliable backend services and platforms on GCP and AWS, and implementing standardized service contracts and event-driven architecture. Experienced technical lead, architect, and mentor with a strong background in cloud infrastructure, IaC, and cross-functional collaboration — with a focus on delivering reliable backend services that improve member experiences and operational excellence.
+    skills:
+      enable: true
+      title: "Technologies & Tools"
+      items:
+        - "Java SE / Java EE"
+        - "Apache Maven"
+        - "Terraform"
+        - "REST (JAX-RS)"
+        - "BigQuery (GCP)"
+        - "Dataform (GCP)"
+        - "Datastream (GCP)"
+        - "Pub/Sub (GCP)"
+        - "Cloud Functions (GCP)"
+        - "Workflows (GCP)"
+        - "Cloud Storage (GCP)"
+        - "Cloud Monitoring (GCP)"
+        - "AWS Lambda"
+        - "AWS Batch"
+        - "AWS S3"
+        - "AWS Step Functions"
+        - "AWS SNS/SQS"
+        - "SQL"
+        - "Protocol Buffers"
+        - "Jenkins"
+        - "Docker"
+        - "JMS"
+        - "JMX"
+        - "OAuth"
+        - "Spring Boot"
+        - "Python"
+        - "Node.js"
+        - "React.js"
+        - "Clojure"
+        - "Groovy"
+
+  # Experience
+  experience:
+    enable: true
+    items:
+      - company: "Hy-Vee"
+        jobs:
+          - name: "Sr. Software Engineer"
+            date: "Apr 2024 - Present"
+            content: |-
+              - Build and maintain data extraction pipelines on GCP using Java, Cloud Functions, BigQuery, Dataform, and other GCP infrastructure
+              - Orchestrate ETL workflows and implement data quality checks to ensure reliable, timely data delivery
+              - Develop infrastructure monitoring and alerting tools to detect and surface execution deviations
+              - Create microservices to serve business-relevant aggregate data
+              - Manage cloud infrastructure as code (Terraform) across data platform services
+
+      - company: "Marqeta"
+        jobs:
+          - name: "Sr. Software Engineer"
+            date: "Nov 2021 - Mar 2024"
+            content: |-
+              - Designed and implemented a multi-stage data ingestion pipeline using AWS native services, handling batch file parsing of disparate encodings and enriching data with correlated internal system records
+              - Composed transaction-level views and standardized output into structured, random-access Apache Parquet files
+              - Leveraged AWS Lambda, Step Functions, Batch, EventBridge, S3, SNS, and SQS to automate workflow; managed infrastructure with Terraform
+              - Developed core application logic in Java, deploying multiple stages within Docker containers
+              - Enhanced the Transaction Reconciliation service by storing financial transaction data, automating discrepancy reconciliation between system records and partner data, and generating detailed mismatch reports
+              - Acted as security champion, monitoring vulnerability scans and prioritizing/resolving issues to strengthen system security
+              - Served as privacy champion and liaison to Privacy and Compliance teams, ensuring product compliance with PCI-DSS and company privacy standards
+
+      - company: "Cerner Corporation"
+        companyUrl: "https://www.cerner.com"
+        jobs:
+          - name: "Software Engineer IV"
+            date: "Feb 2019 - Nov 2021"
+            content: |-
+              - Led as subject matter expert for the Java service development platform on Millennium, enhancing middleware and operational tooling to standardize system integration across the flagship product suite
+              - Developed and improved platform libraries covering service discovery, reliability, operational tooling, resilience, data serialization, message broker interaction, IOC/dependency injection, database config, caching, ORM, and logging abstraction
+              - Delivered design guidance via sessions, knowledge transfers, meetups, wiki docs, sample projects, and Javadoc to streamline developer adoption for Millennium services
+              - Validated integration of the Millennium platform with new OS, JRE, Java Enterprise, middleware brokers, and APM versions using automated regression, integration, and manual testing in isolated environments
+              - Implemented and maintained Maven and Eclipse IDE plugins to accelerate creation and maintenance of Millennium services
+              - Integrated Java enterprise runtime with a containerized platform, enabling migration of dozens of existing services to SaaS
+              - Served as platform security champion, reviewing vulnerabilities, managing notifications, logging POA&Ms, and coordinating remediations in a FedRAMP environment
+              - Mentored 8 developers, conducted code reviews, and led monthly knowledge transfers and demos to boost team capability
+              - Advised on standardizing build and release pipelines for Java artifacts, leveraging Maven and Jenkins for improved CI/CD efficiency
+          - name: "Sr. Software Engineer"
+            date: "May 2008 - Nov 2018"
+            content: |-
+              - Led a major uplift of Java enterprise platform APIs to utilize functions and generics, reducing developer configuration and environment skew with annotation-based design-time configuration
+              - Enhanced platform integration with popular observability tools, enabling near-real-time monitoring of Java services across diverse client production environments
+              - Designed and executed performance tests; established enterprise-wide standards for Java service performance tuning
+              - Supported production operations by diagnosing performance issues and coordinating fixes between application development teams
+              - Collaborated with vendors to resolve integration issues discovered during testing
+              - Directed evolution of the team's continuous integration system into a robust integration and release management pipeline; defined reusable patterns for all Java development company-wide
+              - Served as subject matter expert for the Java enterprise platform
+              - Developed WebSphere Application Server tooling to simplify web app deployment by integrating discoverability and removing manual configuration
+              - Owned and enhanced enterprise platform libraries standardizing integrations with tooling and middleware
+              - Created testing libraries to autowire test environments for black box testing
+              - Improved integration with WebSphere MQ message queueing to enable cross-application traceability
+              - Built Java services to serve and persist clinical data for scheduling, insurance authorization, and demographics
+              - Developed a playground web application for an in-house OAuth provider using Java JSP and Selenium
+
+      - company: "PayIt"
+        jobs:
+          - name: "Senior Software Engineer"
+            date: "Nov 2018 - Feb 2019"
+            content: |-
+              - Built Java REST microservices and a Clojure-based finite state machine for customer workflow automation
+              - Integrated with client data systems; transformed and loaded customer data models into MongoDB
+              - Enhanced a Node.js ES6 service for data transformation and display
+
+  # Education
+  education:
+    enable: true
+    index: false
+    items:
+      - title: "Master of Science, Applied Computer Science"
+        school:
+          name: "Northwest Missouri State University"
+          url: "https://www.nwmissouri.edu"
+        date: "April 2008"
+        GPA: "3.82"
+      - title: "Bachelor of Science, Computer Science"
+        school:
+          name: "Northwest Missouri State University"
+          url: "https://www.nwmissouri.edu"
+        date: "April 2006"
+        GPA: "3.01"
+
+  # Achievements (repurposed for community & leadership)
+  achievements:
+    enable: true
+    title: "Community & Leadership"
+    items:
+      - title: "Scouting America"
+        content: "Committee Chair & Volunteer, September 2024 - Present."
+      - title: "Kansas City Java User's Group"
+        content: "Organizer & Host, June 2017 - December 2022. Managed speakers, sponsors, venues, web presence, and member communications to grow meetup attendance."
+      - title: "Cerner Java Developers Meetup"
+        content: "Lead Organizer & Emcee, March 2012 - November 2018. Coordinated topics and speakers; presented on practical Java topics for day-to-day development."
+      - title: "Eagle Scout"
+        content: "Boy Scouts of America, December 2019."
+
+  # Projects (flagship initiatives drawn from professional experience)
+  projects:
+    enable: false
+    items:
+      - title: "GCP Data Extraction & ETL Platform"
+        content: >-
+          Built and maintain data extraction pipelines on GCP using Java, Cloud
+          Functions, BigQuery, and Dataform, with orchestrated ETL workflows,
+          data quality checks, and infrastructure monitoring for reliable,
+          timely data delivery.
+        badges:
+          - "Java"
+          - "GCP"
+          - "BigQuery"
+          - "Terraform"
+      - title: "Multi-Stage AWS Data Ingestion Pipeline"
+        content: >-
+          Designed and implemented a multi-stage data ingestion pipeline on
+          AWS native services, parsing disparate batch file encodings and
+          producing structured, random-access Apache Parquet output using
+          Lambda, Step Functions, Batch, EventBridge, S3, SNS, and SQS.
+        badges:
+          - "Java"
+          - "AWS"
+          - "Terraform"
+          - "Docker"
+      - title: "Transaction Reconciliation Service"
+        content: >-
+          Enhanced a financial transaction reconciliation service, automating
+          discrepancy detection between system records and partner data and
+          generating detailed mismatch reports.
+        badges:
+          - "Java"
+          - "AWS"
+      - title: "Millennium Java Service Platform"
+        content: >-
+          Led development of platform libraries covering service discovery,
+          reliability, resilience, data serialization, message broker
+          interaction, dependency injection, caching, ORM, and logging
+          abstraction for Cerner's flagship Millennium product suite.
+        badges:
+          - "Java"
+          - "Maven"
+          - "Middleware"
+
+  # Contact
+  contact:
+    enable: true
+    content: "My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!"
+    btnName: "Connect"
+    btnLink: "mailto:brandon.heck@gmail.com"
+
+  footer:
+    socialNetworks:
+      github: https://github.com/brandonheck
+      linkedin: https://www.linkedin.com/in/brandonheck/
+
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
